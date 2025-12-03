@@ -35,6 +35,7 @@ open_read_file()
       if(!new_numb)
         total_zeros++;
 
+      new_numb = (new_numb + DIAL_NUM) % DIAL_NUM;
       curr_numb = new_numb;
     }
   }
